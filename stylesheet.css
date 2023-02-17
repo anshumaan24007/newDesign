@@ -54,6 +54,7 @@
   line-height: 19px;
   color: #1a201e;
   opacity: 0.7;
+  background: transparent;
 }
 .siteTitle ul li:hover > a {
   color: #333366;
@@ -238,8 +239,8 @@
   margin-left: -25px;
   cursor: pointer;
 }
-.websiteLink:hover {
-  background: #effcfe;
+.websiteLink:hover,.websiteLink:hover>.wbBtn {
+  background: #DFDFFF;
 }
 
 .websiteLinkHeader {
