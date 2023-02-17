@@ -1,0 +1,679 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: Inter;
+  margin: 0;
+  padding: 0;
+  background: rgba(249, 251, 252, 1);
+}
+.siteTitle {
+  position: absolute;
+  width: 100%;
+  height: 72px;
+  left: 1px;
+  top: 1px;
+  background: #effcfe;
+  display: flex;
+  justify-content: flex-end;
+}
+.logoImage {
+  position: absolute;
+  width: 176px;
+  height: 64px;
+  left: 64px;
+  top: 5px;
+  background: transparent;
+}
+.siteTitle ul {
+  position: absolute;
+  width: 553px;
+  height: 19px;
+  top: 28.19px;
+  right: 140px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  background: transparent;
+}
+.siteTitle ul > * {
+  background: transparent;
+}
+
+.siteTitle ul li {
+  padding: 0 1rem;
+}
+
+.siteTitle ul li a {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #1a201e;
+  opacity: 0.7;
+}
+.siteTitle ul li:hover > a {
+  color: #333366;
+  opacity: 1;
+}
+.siteTitle ul li:hover::after {
+  width: 100%;
+}
+.imageOverlay {
+  position: absolute;
+  background: #effcfe;
+  opacity: 0.8;
+  top: 73px;
+  height: 549px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.backgroudImage {
+  position: absolute;
+  width: 100%;
+  height: 549px;
+  opacity: 0.3;
+}
+.bannerText {
+  position: absolute;
+  width: 615px;
+  height: 78px;
+  left: 140px;
+  top: 181px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  color: #333366;
+  background: transparent;
+}
+.bannerTextDesc {
+  position: absolute;
+  width: 488px;
+  height: 66px;
+  left: 140px;
+  top: 283px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #1a201e;
+  opacity: 0.7;
+  background: transparent;
+}
+.viewRankingBtn {
+  position: absolute;
+  width: 270px;
+  height: 57px;
+  left: 140px;
+  top: 422px;
+  background: #333366;
+  border-radius: 5px;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.btnImg {
+  margin-right: 11.13px;
+  background: transparent;
+}
+.rankListContainer {
+  box-sizing: border-box;
+  position: absolute;
+  width: auto;
+  height: auto;
+  left: 140px;
+  right: 140px;
+  top: 642px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.06);
+  border-radius: 5px;
+}
+.rankListContainer > * {
+  background: transparent;
+}
+
+.rankContainer {
+  display: grid;
+  justify-content: space-evenly;
+  grid-template-columns: 92px 467px 212px 111px;
+  margin-bottom: 30px;
+  background: transparent;
+}
+.rankContainer > * {
+  background: transparent;
+}
+.rankContainer:nth-child(2) {
+  margin-bottom: -50px;
+}
+.outerImgCont {
+  margin-top: 46px;
+}
+.companyLogoRank {
+  width: 47px;
+  height: 48px;
+  border-radius: 50%;
+}
+.companyLogo {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  margin-right: 16px;
+  padding: 4px;
+}
+.companyLogoNum {
+  width: 47px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  color: #1a201e;
+  opacity: 0.7;
+  background: transparent;
+}
+.companyText {
+  width: 403px;
+  margin-top: 33px;
+  margin-left: -44px;
+  display: flex;
+}
+.companyTitle {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+
+  color: #1a201e;
+  margin-bottom: 6px;
+  margin-top: 0px;
+}
+.descText {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: rgba(26, 32, 30, 0.7);
+  margin: 0;
+}
+.countryText {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: rgba(26, 32, 30, 0.7);
+  margin-top: 58px;
+  width: 106px;
+}
+.websiteLink {
+  width: 123px;
+  height: 48px;
+  box-sizing: border-box;
+  background: #ffffff;
+  border: 1px solid #333366;
+  border-radius: 8px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 140%;
+  margin-top: 45px;
+  color: #333366;
+  margin-left: -25px;
+  cursor: pointer;
+}
+.websiteLink:hover {
+  background: #effcfe;
+}
+
+.websiteLinkHeader {
+  margin-left: -25px;
+}
+.wbBtn {
+  margin-right: 17px;
+}
+.partLine {
+  height: 0px;
+  border: 1px solid rgba(26, 32, 30, 0.1);
+  margin-left: 48px;
+  margin-right: 48px;
+}
+
+.rankContainerHeader {
+  margin-top: 49px;
+  width: auto;
+  height: 40px;
+  display: grid;
+  justify-content: space-evenly;
+  grid-template-columns: 47px 512px 212px 111px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  align-items: center;
+  color: rgba(26, 32, 30, 0.7);
+}
+
+.backgroundHeader {
+  width: 100%;
+  background: rgba(26, 32, 30, 0.02);
+  padding: 0px 48px 0px 48px;
+}
+.outDiv {
+  padding: 0px 48px 0px 48px;
+}
+.listHeading {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #1a201e;
+  margin-left: 92px;
+  margin-top: 42px;
+  background: transparent;
+}
+.sortByBtn {
+  background: #fbfbfb;
+  border: 1px solid rgba(26, 32, 30, 0.1);
+  border-radius: 8px;
+  width: 124px;
+  height: 48px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 140%;
+  /* identical to box height, or 20px */
+
+  color: #1a201e;
+}
+.sortBy {
+  margin-left: 28.23px;
+}
+.filterByBtn {
+  background: #fbfbfb;
+  border: 1px solid rgba(26, 32, 30, 0.1);
+  border-radius: 8px;
+  width: 104px;
+  height: 48px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 140%;
+  /* identical to box height, or 20px */
+
+  color: #1a201e;
+}
+.filter {
+  margin-right: 10.25px;
+}
+.flexHeader {
+  display: flex;
+  justify-content: space-between;
+}
+.twoButtons {
+  margin-right: 111px;
+  margin-top: 32px;
+  width: 248px;
+  display: flex;
+  justify-content: space-between;
+  background: transparent;
+}
+.innerTextDiv {
+  background: transparent;
+}
+.innerTextDiv > * {
+  background: transparent;
+}
+.articleContainer {
+  box-sizing: border-box;
+
+  position: absolute;
+  height: 597px;
+  left: 140px;
+  width: auto;
+  left: 140px;
+  right: 140px;
+  top: 2277px;
+
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+  display: flex;
+}
+.rightArticleZone {
+  width: 50%;
+  height: 100vh;
+  gap: 1rem;
+  background: transparent;
+}
+.rightArticleZone > * {
+  background: transparent;
+}
+.articleHeader {
+  width: 368px;
+  height: 87px;
+
+  margin-left: 40px;
+  margin-top: 54px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 120%;
+  /* or 29px */
+
+  background: transparent;
+  color: #1a201e;
+}
+.articleText {
+  margin-left: 40px;
+  margin-top: 26px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  /* or 22px */
+  background: transparent;
+  height: 280px;
+  overflow: hidden auto;
+
+  color: rgba(26, 32, 30, 0.7);
+}
+#span {
+  color: rgba(51, 51, 102, 1);
+  font-weight: 600;
+  font-family: "Inter";
+  background: transparent;
+  display: inline;
+}
+#span1 {
+  color: rgba(51, 51, 102, 1);
+  font-weight: 600;
+  font-family: "Inter";
+  background: transparent;
+}
+
+.userPic {
+  object-fit: cover;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  margin-top: -2px;
+}
+.articleOwner {
+  display: flex;
+  position: absolute;
+  top: 496px;
+  left: 582px;
+}
+.userDetail {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: center;
+  padding: 0 1rem;
+  background: transparent;
+}
+.userDetail > * {
+  background: transparent;
+}
+.subDetails {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  /* or 22px */
+
+  background: transparent;
+  color: rgba(26, 32, 30, 0.7);
+}
+.userName {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+
+  color: #1a201e;
+  background: transparent;
+}
+.faqContainer {
+  position: absolute;
+  width: 100%;
+  height: 917px;
+  left: 0px;
+  top: 2954px;
+
+  background: #ffffff;
+}
+
+.faqHeader {
+  margin-left: 140px;
+  margin-top: 100px;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 44px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: flex-end;
+
+  /* Black */
+
+  color: #272932;
+  background: transparent;
+  margin-bottom: 40px;
+}
+
+.leftFaq {
+  background: transparent;
+}
+
+.rightFaq {
+  padding: 12px 20px 12px 32px;
+  box-sizing: border-box;
+  position: absolute;
+  width: auto;
+  left: 140px;
+  right: 140px;
+
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.06);
+  border-radius: 5px;
+}
+.accordion {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+
+  color: #1a201e;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  background: transparent;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  justify-content: space-between;
+}
+
+.accordion.active {
+  border-bottom: 0;
+}
+
+input,
+button,
+submit {
+  border: none;
+}
+
+.panel p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  /* or 22px */
+  width: 774px;
+
+  color: #1a201e;
+
+  opacity: 0.7;
+  background: transparent;
+  padding-left: 20px;
+}
+
+.panel {
+  display: none;
+  background: transparent;
+  border-bottom: 1px solid rgb(0, 0, 0, 0.1);
+  padding-bottom: 19px;
+}
+
+.last {
+  border: none !important;
+}
+.accordion .collapse,
+.accordion.active .expand {
+  background: transparent;
+  display: none;
+  margin-right: 34px;
+}
+
+.accordion.active .collapse,
+.accordion .expand {
+  display: block;
+  background: transparent;
+  margin-right: 34px;
+}
+.hiddenText {
+  display: none;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  background: transparent;
+  color: rgba(26, 32, 30, 0.7);
+}
+.hiddenText::after {
+  transition: all 0.3s ease;
+}
+span {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  background: transparent;
+  color: rgba(26, 32, 30, 0.7);
+}
+/* width */
+.articleText::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+.articleText::-webkit-scrollbar-track {
+  box-shadow: none;
+}
+
+/* Handle */
+.articleText::-webkit-scrollbar-thumb {
+  height: 167px;
+
+  background: #e4e4e4;
+  border-radius: 8px;
+  visibility: visible;
+}
+
+/* Handle on hover */
+.articleText::-webkit-scrollbar-thumb:hover {
+  background: #e4e4e4;
+}
+
+/* button */
+
+.btn41-43 {
+  padding: 10px 25px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  background: transparent;
+  outline: none !important;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-41 {
+  border: 2px solid rgb(255, 255, 255);
+  z-index: 1;
+  color: white;
+  border-radius: 4px;
+  font-family: Inter;
+  background: linear-gradient(
+    123.91deg,
+    #333366 0%,
+    #215181 48.84%,
+    #116b99 100%
+  );
+  width: 222px;
+  height: 57px;
+}
+
+.btn-41:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  direction: rtl;
+  z-index: -1;
+  background: rgba(51, 51, 102, 1);
+  transition: all 0.3s ease;
+  border-radius: 8px;
+}
+
+.btn-41:hover {
+  color: #ffffff;
+}
+.btn-41:hover > .btnImg {
+  background: rgba(51, 51, 102, 1);
+}
+
+.btn-41:hover:after {
+  left: auto;
+  right: 0;
+  width: 100%;
+}
+
+.btn-41:active {
+  top: 60%;
+}

@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quant Insites</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+  </head>
+  <body>
+    <script src="script.js"></script>
+    <div class="mainContainer">
+      <div class="bannerContainer">
+        <div class="siteTitle">
+          <img src="assets/logo.png" alt="" class="logoImage" />
+          <ul>
+            <li>
+              <a href="/about">About</a>
+            </li>
+            <li>
+              <a href="/contactus">Contact Us</a>
+            </li>
+            <li>
+              <a href="/termsofuse">Terms of Use</a>
+            </li>
+            <li>
+              <a href="/privacypolicy">Privacy Policy</a>
+            </li>
+          </ul>
+        </div>
+        <div class="bannerImage">
+          <div class="imageOverlay">
+            <img src="assets/Banner.png" alt="" class="backgroudImage" />
+          </div>
+          <div class="bannerText">
+            Looking for independent, objective and trustworthy market research?
+          </div>
+          <div class="bannerTextDesc">
+            You are here, Quant Insites is a market research company dedicated
+            to providing objective rankings and information on a given industry.
+          </div>
+          <button class="viewRankingBtn btn41-43 btn-41" onclick="scrollDown()">
+            <img src="assets/medal.svg" alt="" class="btnImg" />
+            VIEW RANKINGS
+          </button>
+        </div>
+      </div>
+
+      <div class="rankListContainer" id="section2">
+        <div class="flexHeader">
+          <div class="listHeading">Showing top 10 ‘design companies’</div>
+          <div class="twoButtons">
+            <button class="sortByBtn">
+              Sort By<img src="./assets/sortBy.png" alt="" class="sortBy" />
+            </button>
+            <button class="filterByBtn">
+              <img src="./assets/filter.png" alt="" class="filter" />Filters
+            </button>
+          </div>
+        </div>
+        <div class="backgroundHeader">
+          <div class="rankContainerHeader">
+            <div class="companyHeader">RANK</div>
+            <div class="companyTextHeader">
+              <div class="companyHeader">COMPANY</div>
+              <h4 class="companyTitle"></h4>
+              <p class="descText"></p>
+            </div>
+            <div class="countryTextHeader">LOCATION</div>
+            <div class="websiteLinkHeader">WEBSITE</div>
+          </div>
+        </div>
+        <div class="outDiv">
+          <div class="rankContainer">
+            <div class="outerImgCont">
+              <img src="./assets/first.png" alt="" class="companyLogoRank" />
+            </div>
+            <div class="companyText">
+              <img
+                src="https://logo.clearbit.com/vkontakte.ru"
+                alt=""
+                class="companyLogo"
+              />
+              <div class="innerTextDiv">
+                <h4 class="companyTitle">VKontakte</h4>
+                <p class="descText">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor.
+                </p>
+              </div>
+            </div>
+            <div class="countryText">Alaska, US</div>
+            <button onclick="window.open('https://vk.com')" class="websiteLink">
+              <img src="./assets/wbBtn.png" alt="" class="wbBtn" />
+              Website
+            </button>
+          </div>
+          <div class="partLine"></div>
+        </div>
+        <div class="outDiv">
+          <div class="rankContainer">
+            <div class="outerImgCont">
+              <img src="./assets/second.png" alt="" class="companyLogoRank" />
+            </div>
+            <div class="companyText">
+              <img
+                src="https://logo.clearbit.com/photobucket.com"
+                alt=""
+                class="companyLogo"
+              />
+              <div class="innerTextDiv">
+                <h4 class="companyTitle">Photobucket Inc.</h4>
+                <p class="descText">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor.
+                </p>
+              </div>
+            </div>
+            <div class="countryText">Utah, US</div>
+            <button
+              onclick="window.open('https://www.photobucket.com/')"
+              class="websiteLink"
+            >
+              <img src="./assets/wbBtn.png" alt="" class="wbBtn" />
+              Website
+            </button>
+          </div>
+          <div class="partLine"></div>
+        </div>
+        <div class="outDiv">
+          <div class="rankContainer">
+            <div class="outerImgCont">
+              <img src="./assets/third.png" alt="" class="companyLogoRank" />
+            </div>
+            <div class="companyText">
+              <img
+                src="https://logo.clearbit.com/ft.com"
+                alt=""
+                class="companyLogo"
+              />
+              <div class="innerTextDiv">
+                <h4 class="companyTitle">Superhuman</h4>
+                <p class="descText">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor.
+                </p>
+              </div>
+            </div>
+            <div class="countryText">Ohio, US</div>
+            <button
+              onclick="window.open('https://www.ifeng.com')"
+              class="websiteLink"
+            >
+              <img src="./assets/wbBtn.png" alt="" class="wbBtn" />
+              Website
+            </button>
+          </div>
+          <div class="partLine"></div>
+        </div>
+        <div class="outDiv">
+          <div class="rankContainer">
+            <div class="outerImgCont"><div class="companyLogoNum">4</div></div>
+            <div class="companyText">
+              <img
+                src="https://logo.clearbit.com/un.org"
+                alt=""
+                class="companyLogo"
+              />
+              <div class="innerTextDiv">
+                <h4 class="companyTitle">Facebook</h4>
+                <p class="descText">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor.
+                </p>
+              </div>
+            </div>
+            <div class="countryText">California, US</div>
+            <button
+              onclick="window.open('https://www.sciencedirect.com')"
+              class="websiteLink"
+            >
+              <img src="./assets/wbBtn.png" alt="" class="wbBtn" />
+              Website
+            </button>
+          </div>
+          <div class="partLine"></div>
+        </div>
+        <div class="outDiv">
+          <div class="rankContainer">
+            <div class="outerImgCont"><div class="companyLogoNum">5</div></div>
+            <div class="companyText">
+              <img
+                src="https://logo.clearbit.com/japanpost.jp"
+                alt=""
+                class="companyLogo"
+              />
+              <div class="innerTextDiv">
+                <h4 class="companyTitle">General Motors</h4>
+                <p class="descText">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor.
+                </p>
+              </div>
+            </div>
+            <div class="countryText">California, US</div>
+            <button
+              onclick="window.open('https://www.scientificamerican.com')"
+              class="websiteLink"
+            >
+              <img src="./assets/wbBtn.png" alt="" class="wbBtn" />
+              Website
+            </button>
+          </div>
+          <div class="partLine"></div>
+        </div>
+        <div class="outDiv">
+          <div class="rankContainer">
+            <div class="outerImgCont"><div class="companyLogoNum">6</div></div>
+            <div class="companyText">
+              <img
+                src="https://logo.clearbit.com/stanford.edu"
+                alt=""
+                class="companyLogo"
+              />
+              <div class="innerTextDiv">
+                <h4 class="companyTitle">State Farm Insurance</h4>
+                <p class="descText">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor.
+                </p>
+              </div>
+            </div>
+            <div class="countryText">California, US</div>
+            <button
+              onclick="window.open('https://www.pen.io')"
+              class="websiteLink"
+            >
+              <img src="./assets/wbBtn.png" alt="" class="wbBtn" />
+              Website
+            </button>
+          </div>
+          <div class="partLine"></div>
+        </div>
+        <div class="outDiv">
+          <div class="rankContainer">
+            <div class="outerImgCont"><div class="companyLogoNum">7</div></div>
+            <div class="companyText">
+              <img
+                src="https://logo.clearbit.com/samsung.com"
+                alt=""
+                class="companyLogo"
+              />
+              <div class="innerTextDiv">
+                <h4 class="companyTitle">Uber</h4>
+                <p class="descText">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor.
+                </p>
+              </div>
+            </div>
+            <div class="countryText">California, US</div>
+            <button
+              onclick="window.open('https://www.quantcast.com')"
+              class="websiteLink"
+            >
+              <img src="./assets/wbBtn.png" alt="" class="wbBtn" />
+              Website
+            </button>
+          </div>
+          <div class="partLine"></div>
+        </div>
+        <div class="outDiv">
+          <div class="rankContainer">
+            <div class="outerImgCont"><div class="companyLogoNum">8</div></div>
+            <div class="companyText">
+              <img
+                src="https://logo.clearbit.com/phpbb.com"
+                alt=""
+                class="companyLogo"
+              />
+              <div class="innerTextDiv">
+                <h4 class="companyTitle">Goldman Sachs Group</h4>
+                <p class="descText">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor.
+                </p>
+              </div>
+            </div>
+            <div class="countryText">Idaho, US</div>
+            <button
+              onclick="window.open('https://www.topsy.com')"
+              class="websiteLink"
+            >
+              <img src="./assets/wbBtn.png" alt="" class="wbBtn" />
+              Website
+            </button>
+          </div>
+          <div class="partLine"></div>
+        </div>
+        <div class="outDiv">
+          <div class="rankContainer">
+            <div class="outerImgCont"><div class="companyLogoNum">9</div></div>
+            <div class="companyText">
+              <img
+                src="https://logo.clearbit.com/gravatar.com"
+                alt=""
+                class="companyLogo"
+              />
+              <div class="innerTextDiv">
+                <h4 class="companyTitle">United Airlines</h4>
+                <p class="descText">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor.
+                </p>
+              </div>
+            </div>
+            <div class="countryText">California, US</div>
+            <button
+              onclick="window.open('https://www.shareasale.com')"
+              class="websiteLink"
+            >
+              <img src="./assets/wbBtn.png" alt="" class="wbBtn" />
+              Website
+            </button>
+          </div>
+          <div class="partLine"></div>
+        </div>
+        <div class="outDiv">
+          <div class="rankContainer">
+            <div class="outerImgCont"><div class="companyLogoNum">10</div></div>
+            <div class="companyText">
+              <img
+                src="https://logo.clearbit.com/independent.co.uk"
+                alt=""
+                class="companyLogo"
+              />
+              <div class="innerTextDiv">
+                <h4 class="companyTitle">General Motors</h4>
+                <p class="descText">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor.
+                </p>
+              </div>
+            </div>
+            <div class="countryText">Texas, US</div>
+            <button
+              oncl
+              onclick="window.open('https://www.barnesandnoble.com')"
+              class="websiteLink"
+            >
+              <img src="./assets/wbBtn.png" alt="" class="wbBtn" />
+              Website
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="articleContainer">
+        <img src="./assets/articlepic.png" alt="" class="leftStaticImg" />
+        <div class="rightArticleZone">
+          <div class="articleBody" id="container">
+            <h1 class="articleHeader">
+              What to look for when hiring the services of the specific
+              industry?
+            </h1>
+            <p class="articleText">
+              <span class="displayText" id="displayText"></span>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged. It was
+              popularised in the 1960s with the release of Letraset sheets
+              containing Lorem Ipsum passages, and more recently with desktop
+              publishing software like Aldus PageMaker including versions of
+              Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and
+              typesetting industry...
+              <span id="span" onclick="toggleArticle()">Read more</span>
+              <span class="hiddenText" id="hiddenText">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged. It was
+                popularised in the 1960s with the release of Letraset sheets
+                containing Lorem Ipsum passages, and more recently with desktop
+                publishing software like Aldus PageMaker including versions of
+                Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing
+                and typesetting industry Lorem Ipsum is simply dummy text of the
+                printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an
+                unknown printer took a galley of type and scrambled it to make a
+                type specimen book. It has survived not only five centuries, but
+                also the leap into electronic typesetting, remaining essentially
+                unchanged.
+                <span id="span1" onclick="toggleArticle()">show less</span>
+              </span>
+            </p>
+          </div>
+          <div class="articleOwner">
+            <img src="./assets/user.png" alt="" class="userPic" />
+            <div class="userDetail">
+              <span class="userName">Anshuman Srivastava</span>
+              <span class="subDetails">Published on 25 Feb '23</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="faqContainer">
+        <div class="leftFaq">
+          <h1 class="faqHeader">Frequently Asked Questions</h1>
+        </div>
+        <div class="rightFaq">
+          <button class="accordion" onclick="onAccordianClick()">
+            1. Is there a free trial available?
+            <img src="./assets/plus.png" alt="" class="expand" />
+            <img src="./assets/minus.png" alt="" class="collapse" />
+          </button>
+          <div class="panel">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+
+          <button class="accordion" onclick="onAccordianClick()">
+            2. Can I change my plan later?
+            <img src="./assets/plus.png" alt="" class="expand" />
+            <img src="./assets/minus.png" alt="" class="collapse" />
+          </button>
+          <div class="panel">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+
+          <button class="accordion" onclick="onAccordianClick()">
+            3. What is your cancellation policy?
+            <img src="./assets/plus.png" alt="" class="expand" />
+            <img src="./assets/minus.png" alt="" class="collapse" />
+          </button>
+          <div class="panel">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+          <button class="accordion" onclick="onAccordianClick()">
+            4. Can other info be added to an invoice?
+            <img src="./assets/plus.png" alt="" class="expand" />
+            <img src="./assets/minus.png" alt="" class="collapse" />
+          </button>
+          <div class="panel">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+
+          <button class="accordion" onclick="onAccordianClick()">
+            5. How does billing work?
+            <img src="./assets/plus.png" alt="" class="expand" />
+            <img src="./assets/minus.png" alt="" class="collapse" />
+          </button>
+          <div class="panel">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+
+          <button class="accordion last" onclick="onAccordianClick()">
+            6. How do I change my account email?
+            <img src="./assets/plus.png" alt="" class="expand" />
+            <img src="./assets/minus.png" alt="" class="collapse" />
+          </button>
+          <div class="panel last">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
